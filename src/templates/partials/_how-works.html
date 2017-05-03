@@ -1,0 +1,15 @@
+<div class="how">
+	<div class="container">
+		<h2 class="title">How it Works</h2>
+		<p class="how-subtitle">Our marketplace connects advertisers and sellers of ad space directly.</p>
+		<div class="column-wrapper">
+			{% for item in items.howItem %}
+				<div class="column how-column">
+					<div class="how-icon"><img src="{{item.icon}}" alt="icon"></div>
+					<h3><a href="#" class="column-link">{{item.title}}</a></h3>
+					<p class="column-info">{{item.info}}</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

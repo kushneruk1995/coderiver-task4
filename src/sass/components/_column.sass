@@ -1,0 +1,27 @@
+.column-wrapper
+	margin-top: 44px
+	display: flex
+	text-align: center
+	+r(960)
+		flex-flow: row wrap
+		
+.column-icon
+	margin-bottom: 8px
+
+.column-link
+	+f(Montserrat, 18, 44, #181818, 400)
+	+css-lock(14, 18, 320, 1920, font-size, px)
+	+css-lock(28, 44, 320, 1920, line-height, px)
+	border-bottom: 1px solid transparent
+	margin-top: 26px
+	&:hover
+		border-bottom: 1px solid lighten(#181818, 25%)
+		color: lighten(#181818, 25%)
+		+tr(1s)
+
+.column-info
+	+f(Roboto, 14, 24, #585858, 400)
+	+css-lock(13, 14, 320, 1920, font-size, px)
+	+css-lock(18, 24, 320, 1920, line-height, px)
+	max-width: 309px
+	margin: 3px auto 0

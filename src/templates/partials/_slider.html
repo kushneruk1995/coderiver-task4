@@ -1,0 +1,21 @@
+<div class="slider">
+	<div class="wrapper-slider">
+		<div class="slides">
+			{% for item in items.sliderItem %}
+				<div class="slides-item" style="background-image: url({{item.background}})">
+					<div class="container">
+						<p class="slogan">{{item.title}}</p>
+						<p class="slogan-subtitle">{{item.subtitle}}</p>
+						<a href="#" class="slider-button">{{item.button}}</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="mouse">
+			<div class="mouse-icon">
+  				<div class="wheel"></div>
+  				<div class="mouse-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+			</div>
+		</div>
+	</div>
+</div>

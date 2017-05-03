@@ -1,0 +1,21 @@
+body
+	background: #fff
+
+.container
+	max-width: 1170px
+	margin: 0 auto
+	width: 100%;
+	+r(1170)
+		margin: 0 30px
+		width: auto
+	+r(768)
+		margin: 0 15px
+
+.title
+	+f(Montserrat, 32, 42, #181818, 900)
+	+css-lock(24, 32, 320, 1920, font-size, px)
+	+css-lock(36, 42, 320, 1920, line-height, px)
+	text-align: center
+	text-transform: uppercase
+	margin: 18px auto
+	max-width: 408px

@@ -1,0 +1,35 @@
+.how .container
+	padding: 67px 0 82px
+
+.how-column
+	width: percentage(290/1170)
+	padding: 0 17px
+	border-right: 1px solid #eee
+	&:last-child
+		padding-right: 0
+		border-right: 1px solid transparent
+	&:first-child
+		padding-left: 0
+	+r(960)
+		width: 50%
+		margin-bottom: 40px
+		border-right: 1px solid transparent
+		&:nth-child(odd)
+			border-right: 1px solid #eee
+	+r(768)
+		width: 98%
+		margin-left: 1%
+		margin-right: 1%
+		&:nth-child(odd)
+			border-right: 1px solid transparent
+
+.how-icon
+	min-height: 51px
+
+.how-subtitle
+	max-width: 357px
+	margin: 20px auto
+	text-align: center
+	+f(Roboto, 16, 28,#585858, 50)
+	+css-lock(13, 16, 320, 1920, font-size, px)
+	+css-lock(14, 28, 320, 1920, line-height, px)

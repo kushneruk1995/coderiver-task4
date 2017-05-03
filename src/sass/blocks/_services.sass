@@ -1,0 +1,91 @@
+.services
+	display: flex
+	flex-direction: column
+	margin-top: 17px
+	.title
+		max-width: initial;
+		text-align: left;
+		color: #fff
+	img
+		width: 50%
+		+cover
+		+r(960)
+			width: 85%
+			margin: 0 auto
+		+r(768)
+			width: 100%
+			height: 100%
+.row
+	flex-flow: row
+	display: flex
+	+r(960)
+		flex-flow: row wrap
+	.services-info
+		margin-bottom: 27px
+		background: (linear-gradient(45deg, #0057b8 0%, #01be9d 100%))
+
+.row-reverse
+	flex-flow: row-reverse
+	display: flex
+	+r(960)
+		flex-flow: row wrap
+	.services-info
+		margin-top: 27px
+		background: (linear-gradient(45deg, #01be9d 0%, #0057b8 100%))
+		+r(960)
+			margin-top: 0
+		
+.services-info
+	width: 50%
+	opacity(0.9)
+	padding: 65px 90px
+	+f(Roboto, 16, 28, #fff, 400)
+	+css-lock(20, 28, 320, 1920, line-height, px)
+	+r(1200)
+		padding: 35px 40px
+	+r(960)
+		width: 85%
+		margin: 0 auto
+	+r(768)
+		width: 100%
+		padding: 30px 20px
+	+r(520)
+		padding: 15px
+	p
+		+css-lock(14, 16, 320, 1920, font-size, px)
+	h2
+		+f(Montserrat, 32, 42, #fff, 900)
+		+css-lock(20, 32, 320, 1920, font-size, px)
+		+css-lock(30, 42, 320, 1920, line-height, px)
+		text-align: center
+		text-transform: uppercase
+		margin: 18px 0 29px
+		+r(1200)
+			margin: 8px 0 18px
+	ul
+		margin-top: 43px
+		+r(1200)
+			margin-top: 23px
+		+r(520)
+			margin-top: 13px
+		li
+			+css-lock(14, 16, 320, 1920, font-size, px)
+			position: relative
+			display: flex
+			align-items: center
+			margin-bottom: 15px
+			padding-left: 60px
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content: ''
+				display: inline-block
+				width: 36px
+				height: 36px
+				left: 0
+				border-radius: 50%
+				background-color: #fff
+				background-image: url(../img/icon-check.png)
+				background-repeat: no-repeat
+				background-position: 50% 50%
+				position: absolute

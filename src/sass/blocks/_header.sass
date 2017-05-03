@@ -1,0 +1,173 @@
+.header
+	position: fixed
+	z-index: 100
+	width: 100%
+	+tr(1s)
+	padding-top: 7%
+	+r(1920)
+		padding-top: 2%
+	.container
+		display: flex
+		flex-direction: row
+		align-items: center
+	&-background
+		background-color: #fff
+		box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25)
+		.nav a
+			color: #000
+			&:hover
+				color: lighten(#000, 35%)
+				border-color: lighten(#000, 35%)
+		.nav-link:hover
+			border-color: lighten(#000, 10%)
+		.nav-menu:after
+			background: #000
+		.hamburger span
+			background-color: lighten(#000, 10%)
+			&:before
+				background-color: lighten(#000, 10%)
+			&:after
+				background-color: lighten(#000, 10%)
+
+.header.header-background
+	padding-top: 0
+
+.logo
+	display: inline-block
+
+.nav
+	margin-left: auto
+	+f(Roboto, 15, 44, #fffefe, 400)
+	display: inline-block
+	+r(960)
+		display: none
+	a
+		color: #fffefe
+		text-decoration: none
+		border-bottom: 1px solid transparent
+
+.nav-menu
+	list-style: none
+	display: inline-block
+	&:after
+		content: ""
+		display: inline-block
+		width: 1px
+		height: 14px
+		background: #fff
+
+.nav-menu-item
+	margin-right: 52px
+	display: inline-block
+	a
+		color: #fffefe
+		text-decoration: none
+		border-bottom: 1px solid transparent
+		&:hover
+			+tr(1s)
+			border-bottom: 1px solid #fffefe
+				
+.nav-link
+	font-weight: 700
+	text-transform: uppercase
+	border: 2px solid transparent
+	border-radius: 21px
+	display: inline-block
+	padding: 0px 28px
+	line-height: 40px
+	&:hover
+		border-color: lighten(#fff, 10%)
+		text-decoration: none
+		+tr(1s)
+	&:active
+		border-color: #fff
+		text-decoration: none
+
+.hamburger
+	display: none
+	margin-left: auto
+	width: 40px
+	height: 40px
+	margin-top: 10px
+	+r(960)
+		display: block
+
+.hamburger-icon
+	float: left
+	width: 30px
+	height: 23px
+	overflow: hidden
+	transition: 0.3s
+	span
+		float: left
+		width: 30px
+		height: 3px
+		background-color: #fffefe
+		position: relative
+		top: 10px
+		transition: 0.3s
+		&:before
+			content: ''
+			width: 30px
+			height: 3px
+			background-color: #fffefe
+			position: absolute
+			top: -8px
+			left: 0
+		&:after
+			content: ''
+			width: 30px
+			height: 3px
+			background-color: #fffefe
+			position: absolute
+			bottom: -8px
+			left: 0
+	&.active
+		transform: rotate(360deg)
+		span
+			background-color: transparent
+			&:before
+				top: 0
+				transform: rotate(-45deg)
+			&:after
+				bottom: 0
+				transform: rotate(45deg)
+
+.menu-mobile
+	+f(Roboto, 15, 44, #fffefe, 400)
+	position: fixed
+	display: none
+	top: 0
+	left: -300px
+	height: 100%
+	width: 300px
+	background: rgba(47, 47, 47, 0.95)
+	overflow-x: hidden
+	overflow-y: scroll
+	padding: 20px
+	-webkit-overflow-scrolling: touch
+	transition: 1s ease-in-out
+	overflow: overlay
+	+r(960)
+		display: block
+	ul
+		&:after
+			content: ""
+			display: inline-block
+			width: 85%
+			height: 1px
+			background: #fff
+	li
+		display: block
+	.nav-link
+		+f(Roboto, 15, 44, #fffefe, 900)
+		display: inline-block
+		color: #fff
+		padding: 0 17px
+		&:hover,
+		&:active
+			border-color: #fff
+	&.active
+		left: 0
+		+r(520)
+			width: 240px

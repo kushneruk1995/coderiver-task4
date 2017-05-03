@@ -1,0 +1,62 @@
+.banner
+	padding-bottom: 92px
+	.container
+		background: url(../img/banner.jpg)
+		padding: 113px 50px 108px
+		border-radius: 5px
+		+cover
+		align-items: center
+		display: flex
+		+r(1200)
+			padding: 113px 20px 108px
+			margin: 0 auto
+		+r(768)
+			padding: 83px 20px 80px
+			flex-flow: row wrap
+		+r(520)
+			text-align: center
+
+
+.banner-title
+	+f(Montserrat,26,38,#fefefe,900)
+	+css-lock(14, 26, 320, 1920, font-size, px)
+	+css-lock(28, 38, 320, 1920, line-height, px)
+	text-transform: uppercase
+	width: percentage(303/1060)
+	+r(768)
+		width: 50%
+	+r(520)
+		width: 98%
+		margin: 0 auto
+		margin-bottom: 30px
+
+.banner-info
+	+f(Roboto,16,28,#fff,500)
+	+css-lock(12, 16, 320, 1920, font-size, px)
+	+css-lock(12, 28, 320, 1920, line-height, px)
+	text-transform: uppercase
+	width: percentage(521/1060)
+	padding: 0 56px
+	border-right: 1px solid rgba(255,255,255,0.15)
+	border-left: 1px solid rgba(255,255,255,0.15)
+	+r(1200)
+		padding: 0 35px
+	+r(960)
+		padding: 0 25px
+	+r(768)
+		width: 50%
+		border-right: 1px solid transparent
+	+r(520)
+		width: 98%
+		margin: 0 auto
+		border-left: 1px solid transparent
+
+.banner-link
+	border-radius: 32px
+	margin-left: 41px
+	padding: 9px 3%
+	box-shadow: (0 6px 22px rgba(0, 132, 109, 0.35))
+	+r(1200)
+		margin-left: auto
+	+r(768)
+		margin: 30px auto 0

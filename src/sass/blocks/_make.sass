@@ -1,0 +1,44 @@
+.make-advertising .container
+	padding: 60px 0 45px
+	img
+		border-radius: 8px
+		width: percentage(676/1170)
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 22px
+		+r(520)
+			width: 98%
+
+.make-wrapper
+	display: flex
+	flex-direction: row
+	align-items: center
+	margin-top: 40px
+	+r(768)
+		flex-direction: column
+
+.make-advertising__content
+	max-width: 466px
+	margin-left: auto
+	+r(1170)
+		margin-left: 20px
+	+r(768)
+		text-align: center
+		margin-top: 20px
+		margin-left: 0
+	p
+		+f(Roboto, 16, 28, #585858, 400)
+		+css-lock(14, 16, 320, 1920, font-size, px)
+		+css-lock(18, 28, 320, 1920, line-height, px)
+		&:first-child
+			font-weight: 500
+			margin-bottom: 25px
+			+r(768)
+				margin-bottom: 15px
+
+.make-advertising__link
+	margin-top: 26px
+	display: inline-block
+	border-radius: 24px
+	padding: 0px 34px
+	box-shadow: (0 6px 22px rgba(0, 132, 109, 0.35))
+	+r(768)
+		margin-top: 15px

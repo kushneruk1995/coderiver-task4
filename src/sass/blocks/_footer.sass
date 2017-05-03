@@ -1,0 +1,90 @@
+.footer 
+	border-top: 1px solid #f3f3f3
+	.container
+		display: flex
+		padding: 35px 0
+		+r(960)
+			flex-flow: row wrap
+			justify-content: space-around
+		+r(520)
+			text-align: center
+
+.footer-about
+	width: percentage(549/1170)
+	padding-right: 90px
+	+r(960)
+		width: 90%
+		margin: 0 auto 20px
+		padding-right: 0
+
+.footer-title
+	+f(Montserrat, 15, 44, #313131, 700)
+	text-transform: uppercase
+
+.footer-text
+	+f(Roboto, 14, 24, #737171, 400)
+
+.footer-menu
+	width: percentage(200/1170)
+	padding-right: 88px
+	+r(960)
+		width: 20%
+		padding-right: 0
+	+r(520)
+		width: 98%
+		margin: 15px auto
+
+.footer-link
+	border-bottom: 1px solid transparent
+	+tr(1s)
+	&:hover
+		border-bottom: 1px solid lighten(#737171, 10%)
+		color: lighten(#737171, 10%)
+	&:active
+		border-bottom: 1px solid darken(#737171, 25%)
+		color: darken(#737171, 25%)
+
+.footer-legal
+	width: percentage(253/1170)
+	padding-right: 82px
+	+r(960)
+		width: 20%
+		padding-right: 0
+	+r(520)
+		width: 98%
+		margin: 15px auto
+
+.footer-social
+	width: percentage(175/1170)
+	+r(960)
+		width: 20%
+	+r(520)
+		width: 98%
+		margin: 15px auto
+
+.footer-social__link
+	font-size: 15px
+	border-radius: 50%
+	border: 1px solid #313131
+	width: 30px
+	display: inline-flex
+	justify-content: center
+	height: 30px
+	align-items: center
+	margin-top: 5px
+	margin-right: 7px
+	+tr(1s)
+	+r(768)
+		margin-right: 0
+	&:hover
+		color: lighten(#737171, 15%)
+		border-color: lighten(#313131,15%)
+	&:active
+		color: darken(#737171, 15%)
+		border-color: darken(#313131,15%)
+
+.footer-copyright
+	+f(Roboto, 14, 24, #999, 400)
+	border-top: 1px solid #f3f3f3
+	text-align: center
+	padding: 20px 0

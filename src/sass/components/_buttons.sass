@@ -1,0 +1,12 @@
+.button-primary
+	+f(Roboto, 13, 44, #fff, 500)
+	+css-lock(12, 13, 320, 1920, font-size, px)
+	+css-lock(30, 44, 320, 1920, line-height, px)
+	text-transform: uppercase
+	background-color: #00be9d
+	border: 1px solid #01be9d
+	+tr(0.5s)
+	&:hover
+		background-color: lighten(#00be9d, 5%)
+	&:active
+		background-color: darken(#00be9d, 5%)
